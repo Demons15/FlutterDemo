@@ -3,6 +3,8 @@ import 'package:flutter_app/view/widget/BottomNavigationWidget.dart';
 import 'package:flutter_app/view/widget/DrawerWidget.dart';
 import 'package:flutter_app/view/widget/ListViewWidget.dart';
 
+import 'BasicDemo.dart';
+
 void main() => runApp(App());
 
 class App extends StatelessWidget {
@@ -57,7 +59,8 @@ class Home extends StatelessWidget {
         ),
         body: TabBarView(children: <Widget>[
           ListViewWidget(),
-          Icon(Icons.description, size: 150.0, color: Colors.black12),
+//          Icon(Icons.description, size: 150.0, color: Colors.black12),
+          BasicDemo(),
           Icon(Icons.home, size: 150.0, color: Colors.black12),
         ]),
         drawer: DrawerWidget(),
